@@ -1,0 +1,23 @@
+#Debug files
+.gdb_history
+peda-session-*.txt
+
+#Dev files
+*.swp
+.vscode/
+tags
+
+#Doxygen files
+doxygen/
+
+#Build files
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+build/
+*.o
+*.o.*
