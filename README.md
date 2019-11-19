@@ -12,3 +12,8 @@ All contents in this repository are licensed under a [Beerware License](https://
 	Technically, this is an implementation of 'amd64' coroutine, not for 'pitty-old-32b-i386'.\
 	Is there anybody compalaining about this? Nevermind :P\
 	Supports clobbering for AVX/AVX2 SIMD registers.
+
+* **[SIGSEGV mmap](https://github.com/Revimal/code-graveyard/blob/master/sigsegv-mmap)** (Language: C)\
+	This snippet contains subroutines that try memory-mapping for an address, which caused the segmentation fault.\
+	Only tested on 'x86_64 linux 4.15', so if the prototype of 'sigaction' handler different than my environment, this may not work.\
+	It uses 'Anonymous memory mapping', but you can change it in any form. (e.g. do physical memory mapping from /dev/mem)\
