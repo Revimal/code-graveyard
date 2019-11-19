@@ -6,3 +6,9 @@ I want to ignore any kind of issue about these deprecated codes,
   nonetheless.
 
 All contents in this repository are licensed under a [Beerware License](https://github.com/Revimal/code-graveyard/blob/master/LICENSE).
+
+## CONTENTS
+* **[x86 Coroutine](https://github.com/Revimal/code-graveyard/blob/master/x86-coroutine)** (Language: C, ASM-GCC)\
+	Technically, this is an implementation of 'amd64' coroutine, not for 'pitty-old-32b-i386'.\
+	Is there anybody compalaining about this? Nevermind :P\
+	Supports clobbering for AVX/AVX2 SIMD registers.
