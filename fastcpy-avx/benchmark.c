@@ -11,7 +11,7 @@
 	__asm__ __volatile__ ("lock; addl $0,-4(%%rsp)" ::: "memory", "cc")
 
 #define BENCHMARK_BARRIER_OPTIMIZATION() \
-	__asm__ __volatile__("": : :"memory")
+	__asm__ __volatile__ ("": : :"memory")
 
 static uint8_t orig_arr[BENCHMARK_DATA_SIZE];
 static uint8_t norm_arr[BENCHMARK_DATA_SIZE];
