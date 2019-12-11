@@ -23,3 +23,9 @@ All contents in this repository are licensed under a [Beerware License](https://
 	It requires an 'amd64' machine which supports AVX's 'VMOVUPS' instruction. \
 	You can test this snippet with 'gcc -o benchmark benchmark.c; ./benchmark' commands. \
 	Well... you don't have any GCC build system which lied on Linux? THATS A SHAME :M
+
+* **[Handler Template](https://github.com/Revimal/code-graveyard/blob/master/handler-template)** (Language: C++17)\
+	The beautiful codeset for programmers who badly addicted to the template-meta-programming. \
+	'Whoever does not use the SFINAE has no heart. Whoever want it use has no time to rest.' \
+	Q: Why didn't use 'std::bind'? It makes codes more clarifying. \
+	A: Well... just-for-fun...?
