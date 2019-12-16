@@ -12,7 +12,7 @@ private:
 	std::function<RET_T(ARGS_T...)> handler_;
 
 public:
-	constexpr HandlerClass(std::function<RET_T(ARGS_T...)>&& handler) noexcept : handler_(handler) {};
+	HandlerClass(std::function<RET_T(ARGS_T...)>&& handler) noexcept : handler_(handler) {};
 	RET_T operator()(ARGS_T... args) { return handler_(args...); };
 };
 
