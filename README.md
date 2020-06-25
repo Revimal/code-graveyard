@@ -29,3 +29,11 @@ All contents in this repository are licensed under a [Beerware License](https://
 	'Whoever does not use the SFINAE has no heart. Whoever want it use has no time to rest.' \
 	Q: Why didn't use 'std::bind'? It makes codes more clarifying. \
 	A: Well... just-for-fun...?
+
+* **[Asymmetric Barrier](https://github.com/Revimal/code-graveyard/blob/master/asym-barrier)** (Language: C11)\
+	The 'asymmetric-barrier' is a synchrounous method that is consisted of a single updater and multiple waiters. \
+	It uses ISO/IEC 9899:2011 Atomics but only supports the 'amd64' because the CPU relaxing has done with "PAUSE" instruction. \
+	Don't be disappointed. \
+	You can use this code even on the 'ARM' family with replacing "PAUSE" to "YIELD". (which has introduced since ARMv6K) \
+	If you want more explanations about what is this and what this does, you can find it in the header of the header file. :P \
+	You can test this snippet with 'gcc -o test-barrier test-barrier.c -lpthread; ./test-barrier' commands.
