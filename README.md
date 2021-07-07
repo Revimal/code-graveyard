@@ -29,3 +29,9 @@ All contents in this repository are licensed under a [Beerware License](https://
 	'Whoever does not use the SFINAE has no heart. Whoever want it use has no time to rest.' \
 	Q: Why didn't use 'std::bind'? It makes codes more clarifying. \
 	A: Well... just-for-fun...?
+
+* **[GARP Sender](https://github.com/Revimal/code-graveyard/blob/master/garp-sender)** (Language: C++11)\
+	The standalone toolkit to send GARP packet for testing HA failover actions. \
+    It was made with the **[libtins](http://libtins.github.io/)** library to simplify the implementation of packet manipulations. \
+    You can build this toolkit with 'g\+\+ -o garp-sender garp-sender.cpp -std=c\+\+11 -ltins'. \
+    As a matter of course, you must install the **[libtins](http://libtins.github.io/)** before you compile it.
