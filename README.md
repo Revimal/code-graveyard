@@ -35,3 +35,9 @@ All contents in this repository are licensed under a [Beerware License](https://
     It was made with the **[libtins](http://libtins.github.io/)** library to simplify the implementation of packet manipulations. \
     You can build this toolkit with 'g\+\+ -o garp-sender garp-sender.cpp -std=c\+\+11 -ltins'. \
     As a matter of course, you must install the **[libtins](http://libtins.github.io/)** before you compile it.
+
+* **[Portable RMSpace](https://github.com/Revimal/code-graveyard/blob/master/portable-rmspace)** (Language: C)\
+	This single source file is made to remove whitespaces(TAB, SPACE, NEW-LINE, CARRIAGE-RETURN) as efficiently as in any environment. \
+    It is implemented by a standard-compatible bit-twiddling hack, not any architecture-depend or compiler-depend features. \
+    This one removes whitespaces typically about 1.5 to 2 times faster than the traditional for-loop-based algorithm. \
+    If you know the most optimized algorithm for the target architecture (such as AVX512VBMI), use your one instead of this catastrophically incomprehensible code.
