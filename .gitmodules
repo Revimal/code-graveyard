@@ -1,0 +1,3 @@
+[submodule "portable-rmspace/benchmark/cbench-x86"]
+	path = portable-rmspace/benchmark/cbench-x86
+	url = https://github.com/Revimal/cbench-x86.git

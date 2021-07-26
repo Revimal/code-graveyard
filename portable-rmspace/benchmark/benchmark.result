@@ -1,0 +1,9 @@
+Environment: Ubuntu 16.04 LTS (Linux: 4.15.0-142-generic)
+Processor: Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+Memory: DDR-4 2133MHz 8192MB x3
+Comp: GCC 7.5.0
+Flag: -O3 -m64 -mavx2
+
+[RAW]: CYCLE=00000000000000889212
+[ACC]: CYCLE=00000000000000309956
+[Reduced Performance Impact : -65.14%]

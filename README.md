@@ -40,4 +40,6 @@ All contents in this repository are licensed under a [Beerware License](https://
 	This single source file is made to remove whitespaces(TAB, SPACE, NEW-LINE, CARRIAGE-RETURN) as efficiently as in any environment. \
     It is implemented by a standard-compatible bit-twiddling hack, not any architecture-depend or compiler-depend features. \
     This one removes whitespaces typically about 1.5 to 2 times faster than the traditional for-loop-based algorithm. \
-    If you know the most optimized algorithm for the target architecture (such as AVX512VBMI), use your one instead of this catastrophically incomprehensible code.
+    If you know the most optimized algorithm for the target architecture (such as AVX512VBMI), use your one instead of this catastrophically incomprehensible code. \
+    You can check the benchmark result produced on my machine and its source code in path '[portable-rmspace/benchmark](https://github.com/Revimal/code-graveyard/blob/master/portable-rmspace/benchmark)'. \
+    It shows a 65% reduction in performance impact.
