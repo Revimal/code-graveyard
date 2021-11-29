@@ -43,3 +43,37 @@ All contents in this repository are licensed under a [Beerware License](https://
     If you know the most optimized algorithm for the target architecture (such as AVX512VBMI), use your one instead of this catastrophically incomprehensible code. \
     You can check the benchmark result produced on my machine and its source code in path '[portable-rmspace/benchmark](https://github.com/Revimal/code-graveyard/blob/master/portable-rmspace/benchmark)'. \
     It shows a 65% reduction in performance impact.
+
+* **[GDB Loopchk](https://github.com/Revimal/code-graveyard/blob/master/gdb-loopchk)** (Language: GDB-Python)\
+	'GDB Loopchk' is a GDB plugin for detect a linked list has a loop.
+    ```c
+    struct list_entry {
+        struct list_entry *next;
+    };
+
+    int main(int argc, char *argv[])
+    {
+        struct list_entry a, b, c;
+
+        a.next = &b;
+        b.next = &c;
+        c.next = &a;
+
+        return 0;
+    }
+    ```
+    ```
+    (gdb) p a
+    $1 = {next = 0x7fffffffe338}
+    (gdb) p b
+    $2 = {next = 0x7fffffffe340}
+    (gdb) p c
+    $3 = {next = 0x7fffffffe330}
+    (gdb) source loopchk.py
+    (gdb) loopchk 10 &a
+    Found looping with 2 nodes:
+    0: 0x7fffffffe330
+    1: 0x7fffffffe338
+    2: 0x7fffffffe340
+    ```
+    If you need more information, read this [manual](https://github.com/Revimal/code-graveyard/blob/master/gdb-loopchk/manual.md)!
